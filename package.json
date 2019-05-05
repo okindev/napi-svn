@@ -1,6 +1,6 @@
 {
   "name": "napi-svn",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "nodejs napi library for svn",
   "main": "index.js",
   "_from": "git+",
@@ -24,6 +24,9 @@
     "prebuild": "^8.2.1",
     "url-join": "^4.0.0"
   },
+  "os": [
+    "win32"
+  ],
   "dependencies": {
     "prebuild-install": "^5.3.0"
   },
