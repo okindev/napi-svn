@@ -1,0 +1,36 @@
+{
+  "name": "napi-svn",
+  "version": "1.0.0",
+  "description": "nodejs napi library for svn",
+  "main": "index.js",
+  "_from": "git+",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/okindev/napi-svn.git"
+  },
+  "binary": {
+    "napi_versions": [
+      2,
+      3
+    ]
+  },
+  "scripts": {
+    "install": "prebuild-install -r napi -d --verbose",
+    "test": "node ./test.js"
+  },
+  "author": "okindev",
+  "license": "MIT",
+  "devDependencies": {
+    "prebuild": "^8.2.1",
+    "url-join": "^4.0.0"
+  },
+  "dependencies": {
+    "prebuild-install": "^5.3.0"
+  },
+  "keywords": [
+    "svn",
+    "npm",
+    "package",
+    "napi"
+  ]
+}
