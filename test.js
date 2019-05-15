@@ -41,6 +41,8 @@ svn.checkout(URL, path, (action) => {
     // throw "test";
 }, options);
 
+svn.upgrade(path, options);
+
 svn.export(URL, path, (action) => {
     console.log(action);
 }, options);
