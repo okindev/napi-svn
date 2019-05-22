@@ -1,7 +1,7 @@
 napi-svn
 ========
 
-![npm][npm-version]
+[![npm][npm-version]][npm-url]
 ![size][github-repo-size]
 ![license][github-repo-license]
 ![downloads][npm-weekly-downloads]
@@ -51,7 +51,7 @@ A napi module that wraps subversion
 - NAPI
 - No external dependencies
 
-## Installiation
+## Installation
 
 ```powershell
 npm install napi-svn 
@@ -77,9 +77,20 @@ const options = {
     verbose: false
 };
 
+const revision = {
+    URI: [URL],
+    revision_range: {
+        start: {
+            kind: svn.svn_opt_revision_number,
+            value: 0
+        },
+        end: {
+            kind: svn.svn_opt_revision_head,
+        }
+    }
+};
 
-
-svn.log(log_options, (log) => {
+svn.log(revision, (log) => {
     console.log(log);
 }, options);
 ```
@@ -217,13 +228,14 @@ Revision range object for the log command
             kind: svn.svn_opt_revision_head,
         }
     }
-};
+}
 ```
 
 ## License
 
 MIT
 
+[npm-url]:https://www.npmjs.com/package/napi-svn
 [npm-version]:https://img.shields.io/npm/v/napi-svn.svg
 [github-repo-size]:https://img.shields.io/github/repo-size/okindev/napi-svn.svg
 [github-repo-license]:https://img.shields.io/github/license/okindev/napi-svn.svg

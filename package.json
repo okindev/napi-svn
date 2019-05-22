@@ -3,6 +3,7 @@
   "version": "1.0.3",
   "description": "nodejs napi library for svn",
   "main": "index.js",
+  "homepage": "https://nodesvn.com",
   "_from": "git+",
   "repository": {
     "type": "git",
