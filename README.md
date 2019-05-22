@@ -3,7 +3,7 @@ napi-svn
 
 [![npm][npm-version]][npm-url]
 ![size][github-repo-size]
-![license][github-repo-license]
+[![license][github-repo-license]][license-url]
 ![downloads][npm-weekly-downloads]
 
 A napi module that wraps subversion
@@ -240,3 +240,4 @@ MIT
 [github-repo-size]:https://img.shields.io/github/repo-size/okindev/napi-svn.svg
 [github-repo-license]:https://img.shields.io/github/license/okindev/napi-svn.svg
 [npm-weekly-downloads]:https://img.shields.io/npm/dw/napi-svn.svg
+[license-url]:https://raw.githubusercontent.com/okindev/napi-svn/master/LICENSE
